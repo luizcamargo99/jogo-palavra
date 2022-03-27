@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/global.css">
+    <link rel="stylesheet" href="./Styles/responsive.css">
+    <script src="./Scripts/main.js"></script>
+    <title>Palavra by Luiz Camargo</title>
+</head>
+<body onload="init()">
+    <header>
+        <h1> PALAVRA </h1>
+    </header>
+    <main>
+        <div class="column" id="palavras">
+            <div class="row active" id="linha1">
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+            </div>
+            <div class="row" id="linha2">
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+            </div>
+            <div class="row" id="linha3">
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+            </div>
+            <div class="row" id="linha4">
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+            </div>
+            <div class="row" id="linha5">
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+            </div>
+            <div class="row" id="linha6">
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+                <div class="letter column"> </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="row">
+                <button onclick="escrever('Q')"> Q </button>
+                <button onclick="escrever('W')"> W </button>
+                <button onclick="escrever('E')"> E </button>
+                <button onclick="escrever('R')"> R </button>
+                <button onclick="escrever('T')"> T </button>
+                <button onclick="escrever('Y')"> Y </button>
+                <button onclick="escrever('U')"> U </button>
+                <button onclick="escrever('I')"> I </button>
+                <button onclick="escrever('O')"> O </button>
+                <button onclick="escrever('P')"> P </button>
+            </div>
+            <div class="row">
+                <button onclick="escrever('A')"> A </button>
+                <button onclick="escrever('S')"> S </button>
+                <button onclick="escrever('D')"> D </button>
+                <button onclick="escrever('F')"> F </button>
+                <button onclick="escrever('G')"> G </button>
+                <button onclick="escrever('H')"> H </button>
+                <button onclick="escrever('J')"> J </button>
+                <button onclick="escrever('K')"> K </button>
+                <button onclick="escrever('L')"> L </button>
+            </div>
+            <div class="row">
+                <button onclick="enter()" id="enter"> ENTER </button>
+                <button onclick="escrever('Z')"> Z </button>
+                <button onclick="escrever('X')"> X </button>
+                <button onclick="escrever('C')"> C </button>
+                <button onclick="escrever('V')"> V </button>
+                <button onclick="escrever('B')"> B </button>
+                <button onclick="escrever('N')"> N </button>
+                <button onclick="escrever('M')"> M </button>
+                <button onclick="apagar()" id="apagar"> APAGAR </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span> Desenvolvido por Luiz Camargo </span>
+    </footer>
+</body>
+</html>
