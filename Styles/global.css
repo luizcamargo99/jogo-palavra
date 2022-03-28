@@ -90,13 +90,6 @@ button:hover {
     font-weight: 600;
 }
 
-#enter {
-    background: var(--verde);
-}
-
-#apagar {
-    background: var(--vermelho);
-}
 
 .correto, .nao-tem, .posicao-errada {
     border: none;
@@ -114,4 +107,12 @@ button:hover {
 
 .posicao-errada {
     background: var(--amarelo);
+}
+
+#enter {
+    background: var(--verde);
+}
+
+#apagar {
+    background: var(--vermelho);
 }
