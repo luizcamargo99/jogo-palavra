@@ -83,6 +83,8 @@ button:hover {
     height: 3rem;
     width: 3rem;
     border: 0.15rem solid grey;
+    transition: transform 1s;
+    transform-style: preserve-3d; 
 }
 
 .letter span {
@@ -95,6 +97,7 @@ button:hover {
     border: none;
     height: 3.3rem;
     width: 3.3rem;
+    transform: rotateX(360deg);   
 }
 
 .correto {
