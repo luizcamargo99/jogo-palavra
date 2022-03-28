@@ -60,10 +60,6 @@ button {
     font-weight: 500;
 }
 
-button:hover {
-    background: #4e4e4e;
-}
-
 .column {
     display: flex;
     align-content: center;

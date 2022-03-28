@@ -66,25 +66,29 @@ function enter() {
     for (let index = 0; index < quantidadeLetrasJogo; index++) {
         const letraPalavraDigitada = palavraDigitada.charAt(index);
         const letraPalavraCorreta = palavraAtual.charAt(index);
-
         const elementoLetraAtual = letrasLinha.find(x => x.innerText == letraPalavraDigitada);
+        const tecladoLetraAtual = document.getElementById(letraPalavraDigitada);
 
         if (letraPalavraCorreta.toUpperCase() === letraPalavraDigitada.toUpperCase()) {
             elementoLetraAtual.classList.add('correto');
+            tecladoLetraAtual.classList.add('correto');
+            
         } else if (palavraAtual.toUpperCase().match(letraPalavraDigitada)) {
             elementoLetraAtual.classList.add('posicao-errada');
+            tecladoLetraAtual.classList.add('posicao-errada');
         } else {
             elementoLetraAtual.classList.add('nao-tem');
+            tecladoLetraAtual.classList.add('nao-tem');
         }
     }
 
     const palavras = document.getElementById('palavras');
     let entrouActive = false;
+    
     for (let index = 0; index < palavras.childNodes.length; index++) {
 
         const element = palavras.childNodes[index];
         if (element.nodeName === 'DIV') {
-
             if (entrouActive) {
                 element.classList.add('active');
                 return;
